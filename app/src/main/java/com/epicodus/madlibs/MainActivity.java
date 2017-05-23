@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, verb);
                 Log.d(TAG, adjective);
                 Intent intent = new Intent(MainActivity.this, AdventureOne.class);
+                intent.putExtra("noun", noun);
+                intent.putExtra("verb", verb);
+                intent.putExtra("adjective", adjective);
                 startActivity(intent);
             }
         });
