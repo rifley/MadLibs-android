@@ -10,10 +10,40 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.epicodus.madlibs.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/haveAnAdventureButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jimbo"
-        android:layout_centerVertical="true"
+        android:text="Have An Adventure"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nounEditText"
+        android:hint="Enter a noun"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adjectiveEditText"
+        android:hint="Enter an adjective"
+        android:layout_below="@+id/verbEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verbEditText"
+        android:hint="Enter a verb"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/nounEditText"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
 </RelativeLayout>
